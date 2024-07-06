@@ -15,18 +15,17 @@
  * limitations under the License.
  */
 
-package org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user;
+package org.opengoofy.index12306.frameworks.starter.cache.core;
 
-public class ThreadLocalExample {
-       private static ThreadLocal<String> threadLocal = new ThreadLocal<>();
-
-       public static void main(String[] args) {
-           threadLocal.set("Hello, World!");
-           System.out.println("Thread 1: " + threadLocal.get());
-
-           Thread thread = new Thread(() -> {
-               System.out.println("Thread 2: " + threadLocal.get());
-           });
-           thread.start();
-       }
-   }
+/**
+ * 缓存过滤
+ */
+@FunctionalInterface
+public interface CacheGetFilter<T> {
+    /**
+     * 缓存过滤
+     * @param param 输出参数
+     * @return {@code true} 如果输入参数匹配，否则 {@link Boolean#TRUE}
+     */
+    boolean filter(T param);
+}

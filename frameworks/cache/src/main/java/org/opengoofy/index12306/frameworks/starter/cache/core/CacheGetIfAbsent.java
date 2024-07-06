@@ -15,18 +15,16 @@
  * limitations under the License.
  */
 
-package org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user;
+package org.opengoofy.index12306.frameworks.starter.cache.core;
 
-public class ThreadLocalExample {
-       private static ThreadLocal<String> threadLocal = new ThreadLocal<>();
+/**
+ * 缓存查询为空
+ */
+@FunctionalInterface
+public interface CacheGetIfAbsent<T> {
 
-       public static void main(String[] args) {
-           threadLocal.set("Hello, World!");
-           System.out.println("Thread 1: " + threadLocal.get());
-
-           Thread thread = new Thread(() -> {
-               System.out.println("Thread 2: " + threadLocal.get());
-           });
-           thread.start();
-       }
-   }
+    /**
+     * 如果查询结果为空，执行逻辑
+     */
+    void execute(T param);
+}

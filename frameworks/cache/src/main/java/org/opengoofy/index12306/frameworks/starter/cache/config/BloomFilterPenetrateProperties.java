@@ -15,18 +15,29 @@
  * limitations under the License.
  */
 
-package org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user;
+package org.opengoofy.index12306.frameworks.starter.cache.config;
 
-public class ThreadLocalExample {
-       private static ThreadLocal<String> threadLocal = new ThreadLocal<>();
+import lombok.Data;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 
-       public static void main(String[] args) {
-           threadLocal.set("Hello, World!");
-           System.out.println("Thread 1: " + threadLocal.get());
+@Data
+@ConfigurationProperties(prefix = BloomFilterPenetrateProperties.PREFIX)
+public class BloomFilterPenetrateProperties {
 
-           Thread thread = new Thread(() -> {
-               System.out.println("Thread 2: " + threadLocal.get());
-           });
-           thread.start();
-       }
-   }
+    public static final String PREFIX="framework.cache.redis.bloom-filter.default";
+
+    /**
+     * 布隆过滤器默认实例名称
+     */
+    private String name = "cache_penetration_bloom_filter";
+
+    /**
+     * 每个元素的预期插入量
+     */
+    private Long expectedInsertions=64L;
+
+    /**
+     * 预期错误概率
+     */
+    private Double falseProbability=0.03D;
+}

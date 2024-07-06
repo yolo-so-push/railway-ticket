@@ -15,18 +15,40 @@
  * limitations under the License.
  */
 
-package org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user;
+package org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user.core;
 
-public class ThreadLocalExample {
-       private static ThreadLocal<String> threadLocal = new ThreadLocal<>();
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
-       public static void main(String[] args) {
-           threadLocal.set("Hello, World!");
-           System.out.println("Thread 1: " + threadLocal.get());
+/**
+ * 用户信息实体
+ */
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class UserInfoDTO {
 
-           Thread thread = new Thread(() -> {
-               System.out.println("Thread 2: " + threadLocal.get());
-           });
-           thread.start();
-       }
-   }
+    /**
+     * 用户 ID
+     */
+    private String userId;
+
+    /**
+     * 用户名
+     */
+    private String username;
+
+    /**
+     * 真实姓名
+     */
+    private String realName;
+
+    /**
+     * 用户 Token
+     */
+    private String token;
+}
+

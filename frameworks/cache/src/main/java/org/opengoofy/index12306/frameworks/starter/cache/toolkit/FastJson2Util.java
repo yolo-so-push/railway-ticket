@@ -15,18 +15,31 @@
  * limitations under the License.
  */
 
-package org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user;
+package org.opengoofy.index12306.frameworks.starter.cache.toolkit;
 
-public class ThreadLocalExample {
-       private static ThreadLocal<String> threadLocal = new ThreadLocal<>();
+import com.alibaba.fastjson2.util.ParameterizedTypeImpl;
 
-       public static void main(String[] args) {
-           threadLocal.set("Hello, World!");
-           System.out.println("Thread 1: " + threadLocal.get());
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 
-           Thread thread = new Thread(() -> {
-               System.out.println("Thread 2: " + threadLocal.get());
-           });
-           thread.start();
-       }
-   }
+/**
+ * FastJson2 工具类
+ */
+public final class FastJson2Util {
+
+    /**
+     * 构建类型
+     * @param types
+     * @return
+     */
+    public static Type buildType(Type...types){
+        ParameterizedTypeImpl beforeType=null;
+        if (types!=null&&types.length>0){
+            return new ParameterizedTypeImpl(new Type[]{null},null,types[0]);
+        }
+        for (int i = types.length-1; i >0 ; i--) {
+            beforeType=new ParameterizedTypeImpl(new Type[]{beforeType==null?types[i]:beforeType},null,types[i-1]);
+        }
+        return beforeType;
+    }
+}

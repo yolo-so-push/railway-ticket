@@ -15,18 +15,39 @@
  * limitations under the License.
  */
 
-package org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user;
+package org.opengoofy.index12306.frameworks.starter.cache.config;
 
-public class ThreadLocalExample {
-       private static ThreadLocal<String> threadLocal = new ThreadLocal<>();
+import lombok.Data;
+import org.springframework.boot.context.properties.ConfigurationProperties;
 
-       public static void main(String[] args) {
-           threadLocal.set("Hello, World!");
-           System.out.println("Thread 1: " + threadLocal.get());
+import java.util.concurrent.TimeUnit;
 
-           Thread thread = new Thread(() -> {
-               System.out.println("Thread 2: " + threadLocal.get());
-           });
-           thread.start();
-       }
-   }
+/**
+ * 分布式缓存配置
+ */
+@Data
+@ConfigurationProperties(prefix = RedisDistributedProperties.PREFIX)
+public class RedisDistributedProperties {
+    public static final String PREFIX="framework.cache.redis";
+
+    /**
+     * key前缀
+     */
+    private String prefix="";
+
+    /**
+     * key前缀字符集
+     */
+    private String prefixCharset="UTF-8";
+
+    /**
+     * 默认超时时间
+     */
+    private Long valueTimeout=30000L;
+
+    /**
+     * 时间单位
+     */
+    private TimeUnit valueTimeUnit=TimeUnit.MILLISECONDS;
+
+}
