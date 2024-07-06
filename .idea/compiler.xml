@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bizs" />
+        <module name="base" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dependencies" target="17" />
+      <module name="frameworks" target="17" />
+      <module name="index12306-base-spring-boot-starter" target="17" />
+      <module name="railway-12306" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
