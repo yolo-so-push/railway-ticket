@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-package org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user.bases.config;
+package org.opengoofy.index12306.frameworks.bases.config;
 
-import org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user.bases.init.ApplicationContentPostProcessor;
-import org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user.bases.safe.FastJsonSafeMode;
-import org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user.bases.ApplicationContextHolder;
+import org.opengoofy.index12306.frameworks.bases.init.ApplicationContentPostProcessor;
+import org.opengoofy.index12306.frameworks.bases.safe.FastJsonSafeMode;
+import org.opengoofy.index12306.frameworks.bases.ApplicationContextHolder;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.ApplicationContext;

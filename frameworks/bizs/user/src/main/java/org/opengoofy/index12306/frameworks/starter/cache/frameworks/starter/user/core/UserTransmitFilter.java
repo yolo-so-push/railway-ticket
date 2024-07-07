@@ -20,7 +20,7 @@ package org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.use
 
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
-import org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user.bases.constant.UserConstant;
+import org.opengoofy.index12306.frameworks.bases.constant.UserConstant;
 import org.springframework.util.StringUtils;
 
 import java.io.IOException;

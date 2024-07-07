@@ -26,7 +26,7 @@ import org.opengoofy.index12306.frameworks.starter.cache.config.RedisDistributed
 import org.opengoofy.index12306.frameworks.starter.cache.core.CacheGetFilter;
 import org.opengoofy.index12306.frameworks.starter.cache.core.CacheGetIfAbsent;
 import org.opengoofy.index12306.frameworks.starter.cache.core.CacheLoader;
-import org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user.bases.Singleton;
+import org.opengoofy.index12306.frameworks.bases.Singleton;
 import org.opengoofy.index12306.frameworks.starter.cache.toolkit.CacheUtil;
 import org.opengoofy.index12306.frameworks.starter.cache.toolkit.FastJson2Util;
 import org.redisson.api.RBloomFilter;

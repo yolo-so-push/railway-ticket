@@ -5,19 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.opengoofy.index12306</groupId>
-        <artifactId>index12306-all</artifactId>
+        <artifactId>index12306-frameworks</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>index12306-frameworks</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>base</module>
-        <module>bizs</module>
-        <module>bizs/user</module>
-        <module>cache</module>
-        <module>convention</module>
-        <module>convention</module>
-    </modules>
+    <artifactId>index12306-convention-spring-boot-starter</artifactId>
+
 
 </project>

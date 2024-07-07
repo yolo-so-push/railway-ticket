@@ -23,7 +23,7 @@ import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import lombok.extern.slf4j.Slf4j;
-import org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user.bases.constant.UserConstant;
+import org.opengoofy.index12306.frameworks.bases.constant.UserConstant;
 import org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user.core.UserInfoDTO;
 import org.springframework.util.StringUtils;
 

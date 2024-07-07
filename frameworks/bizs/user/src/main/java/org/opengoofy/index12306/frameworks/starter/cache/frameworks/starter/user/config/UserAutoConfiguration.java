@@ -17,7 +17,7 @@
 
 package org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user.config;
 
-import org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user.bases.constant.FilterOrderConstant;
+import org.opengoofy.index12306.frameworks.bases.constant.FilterOrderConstant;
 import org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user.core.UserTransmitFilter;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnWebApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;

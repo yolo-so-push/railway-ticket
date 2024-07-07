@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user.bases.safe;
+package org.opengoofy.index12306.frameworks.bases.safe;
 
 import org.springframework.beans.factory.InitializingBean;
 

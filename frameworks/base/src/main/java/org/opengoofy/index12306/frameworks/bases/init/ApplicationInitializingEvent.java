@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user.bases.init;
+package org.opengoofy.index12306.frameworks.bases.init;
 
 import org.springframework.context.ApplicationEvent;
 

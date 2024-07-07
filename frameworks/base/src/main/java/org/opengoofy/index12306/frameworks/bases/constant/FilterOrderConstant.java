@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user.bases.constant;
+package org.opengoofy.index12306.frameworks.bases.constant;
 
 /**
  * 全局过滤器顺序执行常量类

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.opengoofy.index12306.frameworks.starter.cache.frameworks.starter.user.bases;
+package org.opengoofy.index12306.frameworks.bases;
 
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
