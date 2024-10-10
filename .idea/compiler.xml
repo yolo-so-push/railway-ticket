@@ -7,21 +7,51 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="index12306-distributedid-spring-boot-starter" />
+        <module name="index12306-user-service" />
+        <module name="log" />
+        <module name="index12306-log-spring-boot-starter" />
+        <module name="index12306-gateway-service" />
+        <module name="index12306-aggregation-service" />
         <module name="index12306-base-spring-boot-starter" />
         <module name="index12306-convention-spring-boot-starter" />
-        <module name="index12306-user-spring-boot-starter" />
+        <module name="index12306-common-spring-boot-starter" />
+        <module name="services" />
+        <module name="user-service" />
+        <module name="index12306-pay-service" />
+        <module name="index12306-order-service" />
+        <module name="index12306-designpattern-spring-boot-starter" />
+        <module name="index12306-database-spring-boot-starter" />
+        <module name="web" />
+        <module name="index12306-ticket-service" />
+        <module name="index12306-idempotent-spring-boot-starter" />
+        <module name="index12306-web-spring-boot-starter" />
         <module name="index12306-cache-spring-boot-starter" />
+        <module name="index12306-user-spring-boot-starter" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="base" target="17" />
       <module name="bizs" target="17" />
       <module name="cache" target="17" />
+      <module name="common" target="17" />
       <module name="convention" target="17" />
+      <module name="database" target="17" />
       <module name="dependencies" target="17" />
+      <module name="designpattern" target="17" />
+      <module name="distributedid" target="17" />
       <module name="frameworks" target="17" />
+      <module name="gateway-service" target="17" />
+      <module name="idempotent" target="17" />
+      <module name="index12306-idempotent-spirng-boot-starter" target="17" />
+      <module name="log" target="17" />
+      <module name="order-service" target="17" />
+      <module name="pay-service" target="17" />
       <module name="railway-12306" target="17" />
+      <module name="services" target="17" />
       <module name="user" target="17" />
+      <module name="user-service" target="17" />
+      <module name="web" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

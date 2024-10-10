@@ -8,8 +8,8 @@
         <artifactId>index12306-bizs-spring-boot-starter</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-
     <artifactId>index12306-user-spring-boot-starter</artifactId>
+
     <dependencies>
         <dependency>
             <groupId>org.opengoofy.index12306</groupId>
@@ -62,11 +62,6 @@
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>transmittable-thread-local</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>
